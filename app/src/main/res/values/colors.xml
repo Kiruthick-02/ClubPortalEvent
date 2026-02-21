@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Blue Eclipse - Light Theme -->
+    <color name="primary_dark_red">#272757</color>
+    <color name="primary_red">#505081</color>
+    <color name="accent_red">#8686AC</color>
+    <color name="light_red">#8686AC</color>
+
+    <!-- Background Colors -->
+    <color name="app_background">#F5F5FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="surface_dark">#E8E8F0</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#0F0E47</color>
+    <color name="text_secondary">#505081</color>
+    <color name="text_hint">#8686AC</color>
+
+    <!-- Accent Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="divider">#E0E0EC</color>
+
+    <!-- Status Colors -->
+    <color name="green_success">#4CAF50</color>
+    <color name="red_error">#F44336</color>
+    <color name="orange_warning">#FF9800</color>
+    <color name="purple_500">#505081</color>
+    <color name="purple_700">#272757</color>
+    <color name="teal_200">#8686AC</color>
+    <color name="teal_700">#505081</color>
+
+    <!-- Icon Colors -->
+    <color name="icon_tint">#0F0E47</color>
+
+    <!-- QR Code (always light for scanning) -->
+    <color name="qr_background">#FFFFFF</color>
+</resources>

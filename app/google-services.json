@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906636403944",
+    "project_id": "clubevent-portal",
+    "storage_bucket": "clubevent-portal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906636403944:android:e3adb562b9a8a61a17155d",
+        "android_client_info": {
+          "package_name": "com.example.clubeventportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGsFvc3XwtnaZbwKkGKaXiu3Oju1GeV1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

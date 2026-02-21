@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Edit Club Profile (Hidden by default, shown for Admins via Java) -->
+    <item
+        android:id="@+id/action_edit_profile"
+        android:title="Edit Club Profile"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <!-- Logout Button -->
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="always" />
+
+</menu>

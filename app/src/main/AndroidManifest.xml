@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".ClubEventApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClubEventPortal"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".AddEventActivity" android:exported="false"/>
+        <activity android:name=".CreateClubActivity" android:exported="false"/>
+        <activity android:name=".SuperAdminActivity" android:exported="false"/>
+        <activity android:name=".ClubEventsActivity" android:exported="false"/>
+        <activity android:name=".EditClubProfileActivity" android:exported="false"/>
+        <activity android:name=".FullImageActivity" android:exported="false"/>
+        <activity android:name=".TicketActivity" android:exported="false"/>
+        <activity android:name=".AdminAttendanceActivity" android:exported="false"/>
+        <activity android:name=".FeedbackActivity" android:exported="false"/>
+        <activity android:name=".TaskManagerActivity" android:exported="false"/>
+        <activity android:name=".GalleryActivity" android:exported="false"/>
+
+        <!-- THIS WAS MISSING, CAUSING THE CRASH -->
+        <activity android:name=".BudgetManagementActivity" android:exported="false"/>
+        <!-- uCrop Activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+</manifest>
