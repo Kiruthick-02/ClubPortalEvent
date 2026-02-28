@@ -50,4 +50,5 @@ dependencies {
     implementation("androidx.work:work-runtime:2.9.0")
     implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation(libs.ext.junit)
 }
